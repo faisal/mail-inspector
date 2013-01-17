@@ -1,0 +1,19 @@
+<h1>Listing recipients</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recipients.each do |recipient| %>
+  <tr>
+    <td><%= link_to 'Show', recipient %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recipient', new_recipient_path %>

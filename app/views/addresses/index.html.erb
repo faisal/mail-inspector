@@ -1,0 +1,19 @@
+<h1>Listing addresses</h1>
+
+<table>
+  <tr>
+    <th>Sender</th>
+    <th>Message count</th>
+  </tr>
+
+<% @addresses.sort {|a, b| b.messages.length <=> a.messages.length}.each do |address| %>
+  <tr>
+    <td><%= address.comment %> &lt;<%= address.address%>&gt;</td>
+    <td><%= address.messages.size %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Address', new_address_path %>

@@ -1,0 +1,23 @@
+<h1>Hello, mailbox!</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <ul>
+    <li><%= link_to "#{Address.count} Addresses", addresses_path %></li>
+    <li><%= link_to "#{Attachment.count} Attachments", attachments_path %></li>
+    <li><%= link_to "#{Mailbox.count } Mailboxes", mailboxes_path %></li>
+    <li><%= link_to "#{Message.count} Messages", messages_path %></li>
+    <li><%= link_to "#{Property.count} Properties", properties_path %></li>
+    <li><%= link_to "#{Recipient.count} Recipients", recipients_path %></li>
+    <li><%= link_to "#{Subject.count} Subjects", subjects_path %></li>
+  </ul>
+</table>
+
+<br />
+
+<%= link_to "New Subject", new_subject_path %>
