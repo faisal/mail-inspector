@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MailIntel</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>MailIntel</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+  </head>
 
-<%= yield %>
-
-</body>
+  <body>
+    <%= yield %>
+  </body>
 </html>
