@@ -1,2 +1,2 @@
-class Property < ActiveRecord::Base
+class Property < ApplicationRecord
 end

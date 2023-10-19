@@ -1,2 +1,2 @@
-class Subject < ActiveRecord::Base
+class Subject < ApplicationRecord
 end

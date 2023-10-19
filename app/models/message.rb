@@ -1,4 +1,4 @@
-class Message < ActiveRecord::Base
+class Message < ApplicationRecord
   self.inheritance_column = :_type_disabled
 
   belongs_to :mailbox, :foreign_key => "mailbox"

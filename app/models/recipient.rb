@@ -1,3 +1,3 @@
-class Recipient < ActiveRecord::Base
+class Recipient < ApplicationRecord
   self.inheritance_column = :_type_disabled
 end
