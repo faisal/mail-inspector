@@ -6,12 +6,12 @@
 #
 default: &default
   adapter: sqlite3
-  database: <%= '/Users/' + ENV['USER'] + '/Library/Mail/V10/MailData/Envelope Index' %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
+  database: <%= '/Users/' + ENV['USER'] + '/Library/Mail/V10/MailData/Envelope Index' %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,3 +22,4 @@ test:
 
 production:
   <<: *default
+  database: storage/production.sqlite3
