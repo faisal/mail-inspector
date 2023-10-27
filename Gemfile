@@ -25,5 +25,14 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "overcommit", require: false
+  gem "rails_best_practices", require: false
+  gem "rubocop", require: false
+  gem "rubocop-minitest", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubycritic", require: false
 end
 
