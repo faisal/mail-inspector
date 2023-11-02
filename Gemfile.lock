@@ -288,9 +288,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.7-aarch64-linux)
-    sqlite3 (1.6.7-arm64-darwin)
-    sqlite3 (1.6.7-x86_64-linux)
+    sqlite3 (1.6.8-aarch64-linux)
+    sqlite3 (1.6.8-arm64-darwin)
+    sqlite3 (1.6.8-x86_64-linux)
     stringio (3.0.8)
     thor (1.3.0)
     thread_safe (0.3.6)
@@ -328,7 +328,7 @@ DEPENDENCIES
   rubocop-rails
   rubycritic
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 1.6)
   tzinfo-data
 
 BUNDLED WITH
