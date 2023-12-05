@@ -130,7 +130,7 @@ GEM
     irb (1.10.0)
       rdoc
       reline (>= 0.3.8)
-    json (2.7.0)
+    json (2.7.1)
     kwalify (0.7.2)
     language_server-protocol (3.17.0.3)
     launchy (2.5.2)
@@ -225,7 +225,7 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.1.0)
-    rdoc (6.6.0)
+    rdoc (6.6.1)
       psych (>= 4.0.0)
     reek (6.1.4)
       kwalify (~> 0.7.0)
