@@ -211,7 +211,7 @@ GEM
     require_all (3.0.0)
     rexml (3.2.6)
     rouge (4.2.0)
-    rubocop (1.60.0)
+    rubocop (1.60.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -288,4 +288,4 @@ RUBY VERSION
    ruby 3.3.0p0
 
 BUNDLED WITH
-   2.5.3
+   2.5.4
