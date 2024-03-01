@@ -96,8 +96,7 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     debug_inspector (1.2.0)
-    drb (2.2.0)
-      ruby2_keywords
+    drb (2.2.1)
     erubi (1.12.0)
     erubis (2.7.0)
     globalid (1.2.1)
@@ -119,7 +118,7 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.0.3)
+    marcel (1.0.4)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
     minitest (5.22.2)
@@ -151,7 +150,6 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
-    prism (0.24.0)
     psych (5.1.2)
       stringio
     puma (6.4.2)
@@ -223,9 +221,8 @@ GEM
       rubocop-ast (>= 1.30.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.0)
+    rubocop-ast (1.31.1)
       parser (>= 3.3.0.4)
-      prism (>= 0.24.0)
     rubocop-minitest (0.34.5)
       rubocop (>= 1.39, < 2.0)
       rubocop-ast (>= 1.30.0, < 2.0)
@@ -238,7 +235,6 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
       rubocop-ast (>= 1.30.0, < 2.0)
     ruby-progressbar (1.13.0)
-    ruby2_keywords (0.0.5)
     sexp_processor (4.17.1)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
