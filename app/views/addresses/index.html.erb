@@ -2,10 +2,10 @@
 
 <h1>Addresses</h1>
 
-<div class="row">
+<div id="addresses" class="row">
   <div class="col">Address</div><div class="col">Count</div>
 </div>
 
-<% @addresses.sort_by { |addr| addr.messages.count }.reverse.each do |address| %>
+<% @addresses.sort_by(&:messages_count).reverse.each do |address| %>
   <%= render address %>
 <% end %>

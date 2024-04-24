@@ -1,17 +1,13 @@
-<h1>Listing attachments</h1>
+<p style="color: green"><%= notice %></p>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Attachments</h1>
 
-<% @attachments.each do |attachment| %>
-  <tr>
-    <td><%= link_to 'Show', attachment %></td>
-  </tr>
-<% end %>
-</table>
+<div id="attachments">
+  <% @attachments.each do |attachment| %>
+    <%= render attachment %>
+    <p>
+      <%= link_to "Show this attachment", attachment %>
+    </p>
+  <% end %>
+</div>
 
-<br />
