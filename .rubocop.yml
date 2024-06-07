@@ -1,10 +1,5 @@
-# Docs: https://github.com/bbatsov/ruby-style-guide
-# Config: https://github.com/bbatsov/rubocop/blob/master/config/default.yml
-
-require:
-  - rubocop-rails
-  - rubocop-minitest
-  - rubocop-performance
+# Omakase Ruby styling for Rails
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
 AllCops:
   ParserEngine: parser_prism
@@ -12,37 +7,9 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   NewCops: enable
-  Exclude:
-    - "bin/**/*"
-    - config.ru
-    - config/application.rb
-    - config/boot.rb
-    - config/environment.rb
-    - "config/environments/*"
-    - config/puma.rb
-    - config/routes.rb
-    - db/schema.rb
-    - "doc/**/*"
-    - Gemfile
-    - "lib/**/*"
-    - Rakefile
-    - "tmp/**/*"
-    - "vendor/**/*"
 
-Layout/LineLength:
-  Enabled: false
-
-Rails/HasManyOrHasOneDependent:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-Style/SymbolArray:
-  Enabled: false
+# Overwrite or add rules to create your own house style
+#
+# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Enabled: false
